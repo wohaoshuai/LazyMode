@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatusBlockView" customModule="LazyMode">
+            <connections>
+                <outlet property="numberDisplay" destination="Pc3-yw-ybC" id="8th-Jg-fYA"/>
+                <outlet property="statusBar" destination="VAS-j4-qrc" id="91W-Ud-1BS"/>
+                <outlet property="typeDisplay" destination="657-ba-qi2" id="GHy-4T-EGS"/>
+                <outlet property="unitDisplay" destination="f4M-ka-2E8" id="j0S-it-7GG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4M-ka-2E8">
+                    <rect key="frame" x="0.0" y="50" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="AVH-Fx-IzI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc3-yw-ybC">
+                    <rect key="frame" x="27" y="18" width="26" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overdue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="657-ba-qi2">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="IT3-pD-LEe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green" translatesAutoresizingMaskIntoConstraints="NO" id="VAS-j4-qrc">
+                    <rect key="frame" x="0.0" y="70" width="80" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="BIl-dc-ahe"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pc3-yw-ybC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0U0-LX-Lw0"/>
+                <constraint firstItem="f4M-ka-2E8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0z7-rv-b4A"/>
+                <constraint firstItem="VAS-j4-qrc" firstAttribute="top" secondItem="f4M-ka-2E8" secondAttribute="bottom" constant="-1" id="AqU-mw-sCP"/>
+                <constraint firstItem="657-ba-qi2" firstAttribute="centerX" secondItem="Pc3-yw-ybC" secondAttribute="centerX" id="CtO-lS-28Y"/>
+                <constraint firstItem="Pc3-yw-ybC" firstAttribute="top" secondItem="657-ba-qi2" secondAttribute="bottom" id="DmL-0O-ehk"/>
+                <constraint firstAttribute="bottom" secondItem="VAS-j4-qrc" secondAttribute="bottom" id="HYX-fA-vUP"/>
+                <constraint firstAttribute="trailing" secondItem="VAS-j4-qrc" secondAttribute="trailing" id="Re5-6m-jnH"/>
+                <constraint firstItem="f4M-ka-2E8" firstAttribute="top" secondItem="Pc3-yw-ybC" secondAttribute="bottom" constant="-2" id="kfO-QL-quK"/>
+                <constraint firstItem="Pc3-yw-ybC" firstAttribute="centerX" secondItem="f4M-ka-2E8" secondAttribute="centerX" id="reY-91-EhW"/>
+                <constraint firstItem="VAS-j4-qrc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sTq-AF-bl5"/>
+                <constraint firstItem="f4M-ka-2E8" firstAttribute="top" secondItem="Pc3-yw-ybC" secondAttribute="bottom" constant="-7" id="zbU-hx-ShA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0U0-LX-Lw0"/>
+                    <exclude reference="zbU-hx-ShA"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="1332" y="445.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Green" width="301" height="67"/>
+    </resources>
+</document>
